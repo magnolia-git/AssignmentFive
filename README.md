@@ -1,0 +1,1 @@
+This project contains 3 classes: WordCount, Histograms, and UniqueNames. These coincide with the assignment here: https://see.stanford.edu/materials/icspmcs106a/30-section-handout-5.pdf
