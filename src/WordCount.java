@@ -33,12 +33,11 @@ public class WordCount {
 			while ((tempString = bufferRead.readLine()) != null) {
 				charcount += tempString.length();
 				String[] words = tempString.split("( )|(')");
-				
 				wordcount += words.length;
 				linecount++;
-
 			}
-
+			bufferRead.close();
+			
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found.");
 		} catch (IOException e) {
@@ -47,6 +46,5 @@ public class WordCount {
 		System.out.println("Line count: " + linecount);
 		System.out.println("Word Count: " + wordcount);
 		System.out.println("Character count: " + charcount);
-		
 	}
 }
