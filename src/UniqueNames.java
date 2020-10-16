@@ -30,13 +30,7 @@ public class UniqueNames {
 				 * add it to the list.
 				 */
 				
-				boolean isDuplicate = false;
-				for ( int i = 0; i < nameList.size(); i++) {
-					if (nameList.get(i).equalsIgnoreCase(name)) {
-						isDuplicate = true;
-					}
-				}
-				if (!isDuplicate) {
+				if (!nameList.contains(name)) {
 					nameList.add(name);
 				}
 			}
